@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>个人资料</h1>
+<!-- 用户个人信息 -->
+<div class="profile-container">
+    <div class="profile-info">
+        <h2>基本信息</h2>
+        <p>用户名: <span id="username"></span></p>
+        <p>邮箱: <span id="email"></span></p>
+        <p>注册时间: <span id="register-date"></span></p>
+        <button id="edit-profile">编辑资料</button>
+    </div>
+    
+    <div class="order-history">
+        <h2>交易历史</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>订单号</th>
+                    <th>商品</th>
+                    <th>金额</th>
+                    <th>状态</th>
+                    <th>日期</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 订单历史将在这里显示 -->
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

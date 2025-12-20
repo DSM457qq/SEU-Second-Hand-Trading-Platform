@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>购物车</h1>
+<!-- 购物车内容 -->
+<div class="cart-container">
+    <table>
+        <thead>
+            <tr>
+                <th>商品</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 购物车项目将在这里显示 -->
+        </tbody>
+    </table>
+    <div class="cart-summary">
+        <p>总计: ¥<span id="total-price">0.00</span></p>
+        <button id="checkout">结算</button>
+    </div>
+</div>
+{% endblock %}

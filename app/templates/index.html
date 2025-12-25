@@ -6,9 +6,9 @@
 <!-- 欢迎横幅 -->
 <div class="page-header">
     <div class="container">
-        <h1>欢迎来到 SEU 校园二手交易平台</h1>
-        <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 0;">
-            在这里，你可以安全、便捷地买卖校园内的二手物品
+        <h1>🎓 欢迎来到 SEU 校园二手交易平台</h1>
+        <p style="color: rgba(255, 255, 255, 0.95); margin-bottom: 0; font-size: var(--font-size-lg);">
+            绿色循环 · 便捷交易 · 让闲置物品焕发新生 ✨
         </p>
     </div>
 </div>
@@ -17,23 +17,37 @@
 <div class="container">
     <!-- 分类导航 -->
     <section style="margin-bottom: var(--spacing-2xl);">
-        <h2 style="margin-bottom: var(--spacing-lg); text-align: center;">浏览分类</h2>
+        <h2 style="margin-bottom: var(--spacing-lg); text-align: center; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            📂 浏览分类
+        </h2>
         <div class="grid grid--cols-4">
-            <a href="/items?category=books" class="card flex flex--center flex--col" style="text-decoration: none; padding: var(--spacing-lg);">
-                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">📖</div>
-                <h3 style="margin: 0;">教材书籍</h3>
+            <a href="/items?category=books" class="category-card" style="text-decoration: none; color: inherit;">
+                <div style="font-size: 56px; margin-bottom: var(--spacing-md);">📚</div>
+                <h3 style="margin: 0; color: var(--color-text-primary);">教材书籍</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--spacing-sm); margin-bottom: 0;">
+                    闲置教材 · 参考书籍
+                </p>
             </a>
-            <a href="/items?category=electronics" class="card flex flex--center flex--col" style="text-decoration: none; padding: var(--spacing-lg);">
-                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">💻</div>
-                <h3 style="margin: 0;">电子产品</h3>
+            <a href="/items?category=electronics" class="category-card" style="text-decoration: none; color: inherit;">
+                <div style="font-size: 56px; margin-bottom: var(--spacing-md);">💻</div>
+                <h3 style="margin: 0; color: var(--color-text-primary);">电子产品</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--spacing-sm); margin-bottom: 0;">
+                    手机电脑 · 数码配件
+                </p>
             </a>
-            <a href="/items?category=daily" class="card flex flex--center flex--col" style="text-decoration: none; padding: var(--spacing-lg);">
-                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">🛋️</div>
-                <h3 style="margin: 0;">生活用品</h3>
+            <a href="/items?category=daily" class="category-card" style="text-decoration: none; color: inherit;">
+                <div style="font-size: 56px; margin-bottom: var(--spacing-md);">🛋️</div>
+                <h3 style="margin: 0; color: var(--color-text-primary);">生活用品</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--spacing-sm); margin-bottom: 0;">
+                    宿舍用品 · 生活杂物
+                </p>
             </a>
-            <a href="/items?category=sports" class="card flex flex--center flex--col" style="text-decoration: none; padding: var(--spacing-lg);">
-                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">⚽</div>
-                <h3 style="margin: 0;">运动器材</h3>
+            <a href="/items?category=sports" class="category-card" style="text-decoration: none; color: inherit;">
+                <div style="font-size: 56px; margin-bottom: var(--spacing-md);">⚽</div>
+                <h3 style="margin: 0; color: var(--color-text-primary);">运动器材</h3>
+                <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--spacing-sm); margin-bottom: 0;">
+                  运动装备 · 健身器材
+                </p>
             </a>
         </div>
     </section>
@@ -41,7 +55,10 @@
     <!-- 热门商品 -->
     <section style="margin-bottom: var(--spacing-2xl);">
         <div class="flex flex--between" style="margin-bottom: var(--spacing-lg); align-items: center;">
-            <h2 style="margin: 0;">🔥 热门商品</h2>
+            <h2 style="margin: 0; display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span class="feature-tag">🔥 热门</span>
+                <span>热门商品</span>
+            </h2>
             <a href="/items?sort=popular" class="btn btn--text">查看更多 →</a>
         </div>
         <div class="grid grid--cols-4" id="featured-items">
@@ -56,7 +73,10 @@
     <!-- 最新商品 -->
     <section style="margin-bottom: var(--spacing-2xl);">
         <div class="flex flex--between" style="margin-bottom: var(--spacing-lg); align-items: center;">
-            <h2 style="margin: 0;">✨ 最新上架</h2>
+            <h2 style="margin: 0; display: flex; align-items: center; gap: var(--spacing-sm);">
+                <span class="feature-tag" style="background: var(--gradient-secondary);">✨ 最新</span>
+                <span>最新上架</span>
+            </h2>
             <a href="/items?sort=latest" class="btn btn--text">查看更多 →</a>
         </div>
         <div class="grid grid--cols-4" id="latest-items">
@@ -70,22 +90,30 @@
 
     <!-- 平台信息 -->
     <section style="margin-bottom: var(--spacing-2xl);">
-        <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">为什么选择 SEU 二手流转？</h2>
+        <h2 style="text-align: center; margin-bottom: var(--spacing-lg); background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            为什么选择 SEU 二手流转？💡
+        </h2>
         <div class="grid grid--cols-3">
-            <div class="card" style="padding: var(--spacing-lg);">
-                <div style="font-size: 32px; margin-bottom: var(--spacing-md);">🔐</div>
-                <h3>安全可信</h3>
-                <p style="margin: 0; color: var(--color-text-secondary);">通过校园身份认证，确保交易双方的真实性，让交易更放心。</p>
+            <div class="card hover-lift" style="padding: var(--spacing-xl);">
+                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">🔐</div>
+                <h3 style="margin-bottom: var(--spacing-sm); color: var(--color-primary);">安全可信</h3>
+                <p style="margin: 0; color: var(--color-text-secondary); line-height: 1.6;">
+                    通过校园身份认证，确保交易双方的真实性，让交易更放心。
+                </p>
             </div>
-            <div class="card" style="padding: var(--spacing-lg);">
-                <div style="font-size: 32px; margin-bottom: var(--spacing-md);">⚡</div>
-                <h3>快速便捷</h3>
-                <p style="margin: 0; color: var(--color-text-secondary);">智能搜索和分类，快速找到想要的商品，校园内配送更便利。</p>
+            <div class="card hover-lift" style="padding: var(--spacing-xl);">
+                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">⚡</div>
+                <h3 style="margin-bottom: var(--spacing-sm); color: var(--color-primary);">快速便捷</h3>
+                <p style="margin: 0; color: var(--color-text-secondary); line-height: 1.6;">
+                    智能搜索和分类，快速找到想要的商品，校园内配送更便利。
+                </p>
             </div>
-            <div class="card" style="padding: var(--spacing-lg);">
-                <div style="font-size: 32px; margin-bottom: var(--spacing-md);">💚</div>
-                <h3>资源循环</h3>
-                <p style="margin: 0; color: var(--color-text-secondary);">推动绿色消费，让闲置物品得到充分利用，造福更多校园用户。</p>
+            <div class="card hover-lift" style="padding: var(--spacing-xl);">
+                <div style="font-size: 48px; margin-bottom: var(--spacing-md);">💚</div>
+                <h3 style="margin-bottom: var(--spacing-sm); color: var(--color-primary);">资源循环</h3>
+                <p style="margin: 0; color: var(--color-text-secondary); line-height: 1.6;">
+                    推动绿色消费，让闲置物品得到充分利用，造福更多校园用户。
+                </p>
             </div>
         </div>
     </section>

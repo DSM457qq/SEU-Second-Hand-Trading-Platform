@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="东南大学校园二手交易平台 - 安全、便捷的校园内二手商品交易服务">
-    <meta name="theme-color" content="#0066cc">
+    <meta name="theme-color" content="#7CBA3D">
     <title>{% block title %}东南大学校园二手交易平台{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     {% block extra_css %}{% endblock %}
@@ -16,20 +16,23 @@
             <div class="navbar__inner">
                 <!-- Logo -->
                 <a href="/" class="navbar__logo">
-                    <span>📚</span>
+                    <span style="font-size: 28px;">🎓</span>
                     <span>SEU 二手流转</span>
                 </a>
 
                 <!-- 搜索框 -->
                 <form class="navbar__search">
                     <div class="flex gap-sm">
-                        <input 
-                            type="text" 
-                            class="form-input" 
-                            placeholder="搜索商品、卖家或分类..." 
+                        <input
+                            type="text"
+                            class="form-input"
+                            placeholder="搜索商品、卖家或分类..."
                             required
                         >
-                        <button type="submit" class="btn btn--primary btn--sm">搜索</button>
+                        <button type="submit" class="btn btn--primary btn--sm">
+                            <span>🔍</span>
+                            <span>搜索</span>
+                        </button>
                     </div>
                 </form>
 
@@ -51,30 +54,37 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__section">
-                    <h4>关于平台</h4>
+                    <h4 style="color: var(--color-primary);">🌟 关于平台</h4>
                     <a href="/about" class="footer__link">平台介绍</a>
                     <a href="/guide" class="footer__link">使用指南</a>
                     <a href="/contact" class="footer__link">联系我们</a>
                 </div>
                 <div class="footer__section">
-                    <h4>交易帮助</h4>
+                    <h4 style="color: var(--color-primary);">💼 交易帮助</h4>
                     <a href="/publish" class="footer__link">如何发布商品</a>
                     <a href="/buying-guide" class="footer__link">购买指南</a>
                     <a href="/delivery" class="footer__link">配送说明</a>
                 </div>
                 <div class="footer__section">
-                    <h4>校园服务</h4>
+                    <h4 style="color: var(--color-primary);">🏫 校园服务</h4>
                     <a href="/delivery-points" class="footer__link">配送地点</a>
                     <a href="/faq" class="footer__link">常见问题</a>
                 </div>
                 <div class="footer__section">
-                    <h4>用户协议</h4>
+                    <h4 style="color: var(--color-primary);">📋 用户协议</h4>
                     <a href="/terms" class="footer__link">使用条款</a>
                 </div>
             </div>
             <div class="footer__divider">
-                <p>&copy; 2024 东南大学校园二手交易平台</p>
-                <p>问题反馈：support@seu-secondhand.edu.cn | 电话：xxxx-xxxx</p>
+                <p style="font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-sm);">
+                    &copy; 2024 东南大学校园二手交易平台 🎓
+                </p>
+                <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">
+                    问题反馈：support@seu-secondhand.edu.cn | 电话：xxxx-xxxx
+                </p>
+                <p style="margin-top: var(--spacing-md); font-size: var(--font-size-xs); color: var(--color-text-secondary);">
+                    绿色循环 · 便捷交易 · 服务校园
+                </p>
             </div>
         </div>
     </footer>
